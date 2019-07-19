@@ -1,0 +1,29 @@
+{
+  "name": "mutual-ssl-auth",
+  "version": "0.1.0",
+  "description": "Node mutual ssl authentication demo",
+  "main": "https_server.js",
+  "scripts": {
+    "gencert": "bash gencert.sh",
+    "tls:server": "node ./tls_server.js",
+    "tls:client": "node ./tls_client.js",
+    "https:server": "node ./https_server.js",
+    "https:client": "node ./https_client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugasun/node-mutual-ssl-auth.git"
+  },
+  "keywords": [
+    "ssl",
+    "tls",
+    "https",
+    "mutual-authentication"
+  ],
+  "author": "yugasun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yugasun/node-mutual-ssl-auth/issues"
+  },
+  "homepage": "https://github.com/yugasun/node-mutual-ssl-auth#readme"
+}
