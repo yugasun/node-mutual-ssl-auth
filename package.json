@@ -5,6 +5,7 @@
   "main": "https_server.js",
   "scripts": {
     "gencert": "bash gencert.sh",
+    "server": "node ./app.js",
     "tls:server": "node ./tls_server.js",
     "tls:client": "node ./tls_client.js",
     "https:server": "node ./https_server.js",
@@ -25,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/yugasun/node-mutual-ssl-auth/issues"
   },
-  "homepage": "https://github.com/yugasun/node-mutual-ssl-auth#readme"
+  "homepage": "https://github.com/yugasun/node-mutual-ssl-auth#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-sslify": "^4.0.3"
+  }
 }
