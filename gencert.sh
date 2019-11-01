@@ -61,7 +61,7 @@ CLIENT_PEM_FILE=$SSL_PATH/$DOMAIN.client.pem
 
 openssl genrsa -out $CLIENT_KEY_FILE 1024
 openssl req -new -subj $CERT_SUBJECT -key $CLIENT_KEY_FILE -out $CLIENT_CSR_FILE
-openssl x509 -req -CA $CA_CERT_FILE -CAkey $CA_KEY_FILE -CAcreateserial -in $CLIENT_CSR_FILE -out $CLIENT_CERT_FILE
+openssl x509 -req -days 3650 -CA $CA_CERT_FILE -CAkey $CA_KEY_FILE -CAcreateserial -in $CLIENT_CSR_FILE -out $CLIENT_CERT_FILE
 openssl x509 -in $CLIENT_CERT_FILE -out $CLIENT_PEM_FILE -outform PEM
 # --------- Client end
 
